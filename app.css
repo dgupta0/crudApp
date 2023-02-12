@@ -1,21 +1,32 @@
 body {
     font-family: Source Sans Pro, sans-serif;
-    margin: 0;
     color: #404040;
+    margin: 0;
 }
 
-#root {
-    padding: 2em;
+.main h1 {
+    padding: 0.25em 1em 0 1em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+
+.inputSection,
+.contactSection {
+    width: 100%;
 }
 
 .primary {
     color: #404040;
+    padding: 0.5em 2em;
+
+    height: 100vh;
 }
 
 @media(min-width: 1000px) {
     .primary {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
     }
 
     .inputSection,
@@ -38,16 +49,25 @@ form {
 } */
 
 input {
-    padding: 0.75em 0.30em;
-    font-size: 1em;
+    padding: 0.75em 0;
+    font-size: 1rem;
     letter-spacing: 1px;
-    width: 90%;
+    width: 100%;
     max-width: 100%;
     border: 1px solid #cacaca;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
 
-.addContactBtn {
-    padding: 0.75em;
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.addContactBtn,
+.edit,
+.cancel {
+    padding: 0.85em 1.25em;
     border: none;
     font-family: Roboto;
     font-size: 1em;
@@ -58,9 +78,26 @@ input {
     align-self: flex-start;
 }
 
+.editBtns {
+    display: flex;
+    gap: 0.5em;
+}
+
+.cancel {
+    background-color: white;
+    border: 1px solid #cacaca;
+    color: #404040;
+}
+
+button {
+    cursor: pointer;
+}
+
 table {
     width: 100%;
     text-align: left;
+    border-collapse: collapse;
+    box-sizing: border-box;
 
 }
 
@@ -75,11 +112,17 @@ table {
     letter-spacing: 0.2px;
 }
 
-button {
-    cursor: pointer;
+th {
+    font-size: 1.1em;
+    font-weight: 600;
 }
 
+tr {
+    border-bottom: 2px solid #cacaca;
+}
+
+td,
 th {
-    font-weight: bold;
-    font-size: 1.1em;
+    padding: 0.45em;
+    padding-left: 0;
 }

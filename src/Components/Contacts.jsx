@@ -10,6 +10,7 @@ export default function Contacts(props) {
                 <td>
                     <button
                         className='action edit'
+                        onClick={() => { props.handleEdit(data.name) }}
                     >
                         Edit
                     </button>
@@ -24,7 +25,7 @@ export default function Contacts(props) {
     })
     return (
         <div className="contactSection">
-            <h2>Contact Table</h2>
+            <h2 className="title">Contact Table</h2>
             <table>
                 <thead>
                     <tr>
@@ -34,22 +35,6 @@ export default function Contacts(props) {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Deeti Gupta</td>
-                        <td>deetigupta8@gmail.com</td>
-                        <td>
-                            <button className='action edit'>Edit</button>
-                            <button className='action delete'>Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Deeti</td>
-                        <td>deetigupta8@gmail.com</td>
-                        <td>
-                            <button className='action edit'>Edit</button>
-                            <button className='action delete'>Delete</button>
-                        </td>
-                    </tr>
                     {...tableData}
                 </tbody>
             </table>
