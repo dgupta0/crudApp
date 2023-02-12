@@ -60,7 +60,7 @@ input {
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 600;
 }
 
@@ -112,10 +112,6 @@ table {
     letter-spacing: 0.2px;
 }
 
-th {
-    font-size: 1.1em;
-    font-weight: 600;
-}
 
 tr {
     border-bottom: 2px solid #cacaca;
@@ -125,4 +121,10 @@ td,
 th {
     padding: 0.45em;
     padding-left: 0;
+}
+
+th {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-top: 0;
 }

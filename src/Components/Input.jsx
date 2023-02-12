@@ -21,7 +21,7 @@ export default function Input(props) {
     }
     return (
         <div className='inputSection'>
-            <h2 className="title">Input a Contact</h2>
+            <h2 className="title">Add Contact</h2>
             <form>
                 <input required
                     type="name"
